@@ -1,0 +1,114 @@
+<! DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Store page</title>
+        <style>
+            *{
+                box-sizing: border-box; margin: 0; padding: 0;
+            }
+
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                background: skyblue;
+            }
+
+            header{
+            background: black;
+            color: white;
+            padding: 15px 10%;
+            display: flex;
+            justify-content: space-between;
+
+            }
+
+            header a{
+                color: white;
+                text-decoration: none;
+                font-size: 1.2rem;
+                margin-right: 20px;
+            }
+
+            nav a{
+                color: white;
+                text-decoration: none;
+                font-size: 1.2rem;
+                margin-right: 20px;
+            }
+
+            .product-grid{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                padding: 20px 10%;
+            }
+
+            .cards{
+                background: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                text-align: center;
+                padding: 20px;
+            }
+
+            .cards img{
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+                height: 400px;
+                border-radius: 10px;
+            }
+
+            .buy-btn{
+                display: inline-block;
+                margin-top: 15px;
+                padding: 10px 20px;
+                background-color: rgb(255, 49, 49);
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+
+            .buy-btn:hover{
+               background-color: rgb(255, 201, 238);
+               color: black;
+            }
+            
+            h1, p{
+                padding: 20px 10%;
+            }
+
+            .cards:hover{
+                transform: scale(1.05);
+                transition: transform 0.3s;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">Home</a>
+            <nav>
+            <a href="https://bostondynamics.com/">Boston Dynamic</a>
+            <a href="https://www.1x.tech/discover/neo-home-robot">1X</a>
+            <a href="https://humanoidroboticstechnology.com/industry-news/figure-announces-figure-03-humanoid-robot/">Figure</a>
+            <a href="https://apptronik.com/apollo">Apptronik </a>
+            <a href="https://www.unitree.com/g1">Unitree </a>
+            <a href="https://www.tesla.com/AI">Tesla AI</a>
+
+            </nav>
+        </header>
+        <h1>Welcome to ITEC 2130 Robots store</h1>
+        <p>Here you can find the best robots in the world for the half the price from the original manufacturer. We have a wide range of robots from Boston Dynamics, 1X, Figure, Apptronik, Unitree, and Tesla. We have robots for every need and budget. Whether you are looking for a robot to help you with your daily tasks or a robot to entertain you, we have something for everyone.</p>
+        <div class="product-grid">
+            <div class="cards"><img src="photos/Apolo.png" alt="Apollo"><h3>Apollo</h3> <a href="#" class="buy-btn">Buy</a></div>
+            <div class="cards"><img src="photos/Atlas.png" alt="Figure"><h3>Figure</h3> <a href="#" class="buy-btn">Buy</a></div>
+            <div class="cards"><img src="photos/Roborock.png" alt="Neo"><h3>Neo</h3> <a href="#" class="buy-btn">Buy</a></div>
+            <div class="cards"><img src="photos/NeoRobot.png" alt="Spot"><h3>Spot</h3> <a href="#" class="buy-btn">Buy</a></div>
+            <div class="cards"><img src="photos/OptimusTesla.png" alt="Tesla"><h3>Tesla</h3> <a href="#" class="buy-btn">Buy</a></div>
+            <div class="cards"><img src="photos/UnitreeG1.png" alt="Unitree"><h3>Unitree</h3> <a href="#" class="buy-btn">Buy</a></div>
+            <div class="cards"><img src="photos/FigureRobot.png" alt="Figure"><h3>Figure</h3> <a href="#" class="buy-btn">Buy</a></div>
+
+        </div>
+        
+    </body>
+</html>
